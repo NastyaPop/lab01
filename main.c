@@ -16,8 +16,9 @@ int main() {
 
     switch (n) {
         case 1:
+            d = (-pow(a, 2) + a * x + 6 * pow(x, 2))
             if (d != 0) {
-                G = (-10 * (18 * pow(a, 2) + 11 * a * x - 24 * pow(x, 2))) / (-pow(a, 2) + a * x + 6 * pow(x, 2));
+                G = (-10 * (18 * pow(a, 2) + 11 * a * x - 24 * pow(x, 2))) / d;
                 printf("G=%f\n\n", G);
             } else printf("Введите другие значения для x и a");
             break;
